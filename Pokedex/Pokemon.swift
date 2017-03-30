@@ -1,5 +1,5 @@
 //
-//  File.swift
+//  Pokemon.swift
 //  Pokedex
 //
 //  Created by Douglas Heitner on 3/29/17.
@@ -10,8 +10,8 @@ import Foundation
 
 class Pokemon {
     
-    private var _name: String!
-    private var _pokedexId: Int!
+    fileprivate var _name: String!
+    fileprivate var _pokedexId: Int!
     
     
     var name: String {
