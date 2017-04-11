@@ -30,7 +30,14 @@ class PokemonDetailViewController: UIViewController {
         super.viewDidLoad()
 
         nameLbl.text = pokemon.name.capitalized
-
+        
+        pokemon.downloadPokemonDetails {
+            self.updateUI()
+        }
+    }
+    
+    func updateUI() {
+        
     }
 
     @IBAction func backBtn(_ sender: UIButton) {
